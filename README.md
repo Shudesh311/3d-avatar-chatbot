@@ -17,11 +17,11 @@ The backend is configured for:
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "ai_voice_3d_avatar",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "NAME": "**********",
+        "USER": "*******",
+        "PASSWORD": "****",
+        "HOST": "**",
+        "PORT": "*******",
     }
 }
 ```
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 Copy-Item .env.example .env
 python manage.py migrate
 python manage.py seed_knowledge
-python manage.py runserver 8000
+python manage.py runserver 
 ```
 
 Or double-click `start-backend.bat` in the root folder.
@@ -53,7 +53,7 @@ Put your API keys in `backend\.env`:
 
 ```text
 ELEVENLABS_API_KEY=your-elevenlabs-api-key
-ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM
+ELEVENLABS_VOICE_ID=**************
 OPENAI_API_KEY=your-openai-api-key
 OPENAI_MODEL=gpt-4.1-mini
 ```
