@@ -1,0 +1,5 @@
+@echo off
+cd /d "%~dp0backend"
+".venv\Scripts\python.exe" manage.py migrate
+".venv\Scripts\python.exe" manage.py seed_knowledge
+".venv\Scripts\python.exe" manage.py runserver 8000
